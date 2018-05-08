@@ -1,8 +1,6 @@
 <ul>
-    <li *ngFor="let video of videoData">
-        <a [routerLink]="['play',video.id]">
-          {{video.title}}
-        </a>
-        <br> by {{video.author}}
+    <li *ngFor="let video of videoData" [class.active]="selectedVideo === video.id" (click)="selectVideo(video.id)">
+        <app-video-thumbnail [title]="video.title" [author]="video.author"></app-video-thumbnail>
+        <a [routerLink]="['play',video.id]">route</a>
     </li>
 </ul>

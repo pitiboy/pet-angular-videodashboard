@@ -195,9 +195,15 @@ export class VideoListComponent implements OnInit {
     }
   ];
 
+  selectedVideo = '';
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  selectVideo(selectedVideo) {
+    this.selectedVideo = selectedVideo;
   }
 
 }

@@ -5,7 +5,7 @@ import { VideoPlayerComponent } from './video-player/video-player.component';
 
 const routes: Routes = [
   { path: '', component: VideoDashboardComponent },
-  { path: 'play/:id', component: VideoPlayerComponent },
+  { path: 'play/:id', component: VideoDashboardComponent },
 ];
 
 @NgModule({
