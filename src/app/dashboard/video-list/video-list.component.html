@@ -1,0 +1,8 @@
+<ul>
+    <li *ngFor="let video of videoData">
+        <a [routerLink]="['play',video.id]">
+          {{video.title}}
+        </a>
+        <br> by {{video.author}}
+    </li>
+</ul>

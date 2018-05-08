@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+app-root,
+app-video-dashboard,
+app-video-list,
+app-video-player,
+app-stat-filters {
+    display: block;
+    border: 2px solid green;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
